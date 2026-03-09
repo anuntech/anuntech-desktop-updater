@@ -1,13 +1,8 @@
-use tauri::{TitleBarStyle, WebviewUrl, WebviewWindowBuilder};
+use tauri::{WebviewUrl, WebviewWindowBuilder};
 use tauri_plugin_updater::UpdaterExt;
 
 const INIT_SCRIPT: &str = r#"
 (function() {
-    // Add padding for overlay title bar (macOS traffic lights)
-    var style = document.createElement('style');
-    style.textContent = 'body { padding-top: 28px !important; }';
-    document.head.appendChild(style);
-
     // Intercept target="_blank" link clicks
     document.addEventListener('click', function(e) {
         var link = e.target.closest('a');
@@ -40,7 +35,6 @@ fn build_window<R: tauri::Runtime>(
     )
     .title("Anuntech")
     .hidden_title(true)
-    .title_bar_style(TitleBarStyle::Overlay)
     .inner_size(1280.0, 800.0)
     .min_inner_size(800.0, 600.0)
     .center()
