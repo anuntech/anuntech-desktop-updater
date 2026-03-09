@@ -1,0 +1,39 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Anuntech",
+  "version": "1.0.0",
+  "identifier": "tech.anun.desktop",
+  "build": {
+    "frontendDist": "../src",
+    "devUrl": "https://anun.tech"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/anuntech/anuntech-desktop-updater/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDE1RDE2M0JFQjI0RTI1RUEKUldUcUpVNnl2bVBSRmNjc1FZWnMzK0JHOTZ5cWY3UmNmVCt3RXhCVDQ2cXVsekNTdi82b0s5Z24K"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Productivity",
+    "shortDescription": "Anuntech - Workspace colaborativo",
+    "longDescription": "Aplicativo desktop para a plataforma Anuntech de workspace colaborativo."
+  }
+}
