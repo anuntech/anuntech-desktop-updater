@@ -1,59 +1,71 @@
 # Anuntech Desktop
 
-Aplicativo desktop para a plataforma [Anuntech](https://anun.tech), construído com [Tauri v2](https://v2.tauri.app).
+Aplicativo oficial da **plataforma Anuntech** para computador.
 
-## Download
+Com o Anuntech Desktop você pode acessar seu **Workspace Anuntech** diretamente do seu computador, com melhor desempenho e integração com o sistema operacional.
 
-Baixe a versão mais recente na página de [Releases](https://github.com/anuntech/anuntech-desktop-updater/releases).
+🌐 Plataforma: [https://anuntech.com](https://anun.tech)
 
-| Plataforma | Arquivo |
-|---|---|
-| macOS (Apple Silicon) | `Anuntech_x.x.x_aarch64.dmg` |
-| macOS (Intel) | `Anuntech_x.x.x_x64.dmg` |
-| Windows | `Anuntech_x.x.x_x64-setup.exe` |
-| Linux (Debian/Ubuntu) | `Anuntech_x.x.x_amd64.deb` |
-| Linux (AppImage) | `Anuntech_x.x.x_amd64.AppImage` |
+---
 
-## Funcionalidades
+# Download
 
-- Janela nativa sem barra de navegação do browser
-- Links externos abrem no navegador do sistema
-- Atualizações automáticas via GitHub Releases
+Baixe a versão mais recente na página de **Releases**:
 
-## Desenvolvimento
+[https://github.com/anuntech/anuntech-desktop-updater/releases](https://github.com/anuntech/anuntech-desktop-updater/releases)
 
-### Pré-requisitos
+| Sistema               | Arquivo                         |
+| --------------------- | ------------------------------- |
+| macOS (Apple Silicon) | `Anuntech_x.x.x_aarch64.dmg`    |
+| macOS (Intel)         | `Anuntech_x.x.x_x64.dmg`        |
+| Windows               | `Anuntech_x.x.x_x64-setup.exe`  |
+| Linux (Debian/Ubuntu) | `Anuntech_x.x.x_amd64.deb`      |
+| Linux (Universal)     | `Anuntech_x.x.x_amd64.AppImage` |
 
-- [Node.js](https://nodejs.org) 18+
-- [Rust](https://rustup.rs)
-- Dependências do Tauri para seu SO — veja o [guia oficial](https://v2.tauri.app/start/prerequisites/)
+---
 
-### Setup
+# Funcionalidades
 
-```bash
-npm install
-npm run dev
-```
+* Acesso rápido ao **Workspace Anuntech**
+* Aplicativo desktop dedicado
+* Melhor desempenho que o navegador
+* Links externos abrem no navegador do sistema
+* **Atualizações automáticas**
 
-### Build
+---
 
-```bash
-TAURI_SIGNING_PRIVATE_KEY="$(cat ~/.tauri/anuntech.key)" \
-TAURI_SIGNING_PRIVATE_KEY_PASSWORD="" \
-npm run build
-```
+# Instalação
 
-## Release
+### macOS
 
-Para lançar uma nova versão:
+1. Baixe o arquivo `.dmg`
+2. Arraste **Anuntech** para a pasta **Applications**
 
-1. Atualize `version` em `src-tauri/tauri.conf.json`
-2. Commit e push
-3. Crie uma tag: `git tag vX.X.X && git push origin vX.X.X`
-4. O GitHub Actions builda automaticamente para macOS, Windows e Linux e cria o Release
+### Windows
 
-## Tecnologias
+1. Baixe o arquivo `.exe`
+2. Execute o instalador e siga os passos
 
-- [Tauri v2](https://v2.tauri.app) — Framework desktop multiplataforma
-- [Rust](https://www.rust-lang.org) — Backend nativo
-- [tauri-plugin-updater](https://github.com/tauri-apps/plugins-workspace) — Atualizações automáticas
+### Linux
+
+* **Debian / Ubuntu**
+  Instale o arquivo `.deb`
+
+* **Outras distribuições**
+  Execute o arquivo `.AppImage`
+
+---
+
+# Atualizações
+
+O aplicativo verifica automaticamente se existe uma nova versão e oferece a atualização quando disponível.
+
+---
+
+# Suporte
+
+Se precisar de ajuda ou tiver algum problema:
+
+🌐 [https://anuntech.com](https://anuntech.com)
+📧 [contato@anuntech.com](mailto:contato@anuntech.com)
+
